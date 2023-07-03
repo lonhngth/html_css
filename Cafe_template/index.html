@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Inconsolata">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            body, html {
+                height: 100%;
+                font-family: "Inconsolata", sans-serif;
+            }
+            .menu {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="container mx-auto px-[50px] py-[10px]"
+            style="background-color: black;">
+            <div>
+                <ul class="flex justify-around text-[#fff]">
+                    <li
+                        class="hover:bg-[#cccc] hover:text-[#000] w-full py-[10px] text-center">
+                        <a href>
+                            HOME
+                        </a>
+                    </li>
+                    <li
+                        class="hover:bg-[#cccc] hover:text-[#000] w-full py-[10px] text-center">
+                        <a href>
+                            ABOUT
+                        </a>
+                    </li>
+                    <li
+                        class="hover:bg-[#cccc] hover:text-[#000] w-full py-[10px] text-center">
+                        <a href>
+                            MENU
+                        </a>
+                    </li>
+                    <li
+                        class="hover:bg-[#cccc] hover:text-[#000] w-full py-[10px] text-center">
+                        <a href>
+                            WHERE
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section
+            class="text-[#fff] relative bg-no-repeat bg-center bg-cover container mx-auto min-h-[70%]"
+            style="background-image: url('https://www.w3schools.com/w3images/coffeehouse.jpg');">\
+            <p class="hidden md:block
+                text-[15px] absolute
+                bottom-5 left-10
+                text-end bg-[#000] px-2">Open from 6am to 5pm</p>
+            <h2
+                class="absolute
+                top-[50%] left-[50%]
+                translate-x-[-50%] translate-y-[-50%]
+                text-center text-[90px]">
+                the Cafe
+            </h2>
+            <p class="text-[15px] absolute 
+                bottom-5 right-10
+                text-end">15 Adr street, 5015</p>
+        </section>
+
+        <section class="container mx-auto max-w-[700px] py-[70px]">
+            <div>
+                <h5
+                    class="text-[18px] bg-[#000] w-[25%] text-[#fff] mx-auto text-center">
+                    ABOUT THE CAFE
+                </h5>
+                <p class="text-[18px] text-justify py-[20px]">
+                    The Cafe was founded in blabla by Mr. Smith in lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                    ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p class="text-[18px] text-justify">
+                    In addition to our full espresso and brew bar menu, we serve
+                    fresh made-to-order breakfast and lunch sandwiches, as well
+                    as a selection of sides and salads and other good stuff.
+                </p>
+            </div>
+
+            <div
+                class="p-[20px] border-l-4 mt-[20px] bg-[#f1f1f1]">
+                <p class="text-[18px] pb-[20px]">
+                    <i>
+                        "Use products from nature for what it's worth - but never too early, nor too late."
+                        Fresh is the new sweet.
+                    </i>
+                </p>
+                <p class="text-[18px]">
+                    Chef, Coffeeist and Owner: Liam Brown
+                </p>
+            </div>
+
+            <div class="pt-[20px]">
+                <img src="https://www.w3schools.com/w3images/coffeeshop.jpg" alt>
+                <p class="text-[18px] py-[20px]"><strong>Opening hours:</strong>
+                    everyday
+                    from 6am to 5pm.</p>
+                <p class="text-[18px]"><strong>Address:</strong> 15 Adr street,
+                    5015, NY</p>
+            </div>
+
+            <div class="pt-[50px]" id="menu">
+                <h5
+                    class="text-[18px] bg-[#000] w-[15%] text-[#fff] mx-auto text-center">
+                    THE MENU
+                </h5>
+
+                <div
+                    class="grid grid-cols-2 border-2 border-[#f1f1f1] shadow shadow-gray-500/40 px-[15px] py-[10px] mt-[20px]">
+                    <a class="text-center tablink hover:bg-[#ccc] py-[3px]"
+                        href="javascript:void(0)"
+                        onclick="openMenu(event, 'Eat');" id="myLink">
+                        Eat
+                    </a>
+                    <a class="text-center tablink hover:bg-[#ccc] py-[3px]"
+                        href="javascript:void(0)"
+                        onclick="openMenu(event, 'Drinks');">Drink</a>
+                </div>
+
+                <div id="Eat"
+                    class="px-[10px] py-[20px] menu border-2 border-[#f1f1f1] shadow shadow-gray-500/40">
+                    <h5 class="text-[18px] py-[20px]">Bread Basket</h5>
+                    <p class="text-[18px] text-[#757575] pb-[10px]">Assortment
+                        of
+                        fresh
+                        baked fruit
+                        breads and muffins
+                        5.50</p>
+                    <br>
+                    <h5 class="text-[18px] py-[20px]">Honey Almond Granola with
+                        Fruits</h5>
+                    <p class="text-[18px] text-[#757575] pb-[10px]">Natural
+                        cereal of honey toasted oats, raisins, almonds and dates
+                        7.00</p>
+                    <br>
+                    <h5 class="text-[18px] py-[20px]">Belgian Waffle</h5>
+                    <p class="text-[18px] text-[#757575] pb-[10px]">Vanilla
+                        flavored batter with malted flour 7.50</p>
+                    <br>
+                    <h5 class="text-[18px] py-[20px]">Scrambled eggs</h5>
+                    <p class="text-[18px] text-[#757575] pb-[10px]">Scrambled
+                        eggs, roasted red pepper and garlic, with green onions
+                        7.50</p>
+                    <br>
+                    <h5 class="text-[18px] py-[20px]">Blueberry Pancakes</h5>
+                    <p class="text-[18px] text-[#757575] pb-[10px]">With syrup,
+                        butter and lots of berries 8.50</p>
+                </div>
+
+                <div id="Drink"
+                    class="px-[10px] py-[20px] menu border-2 border-[#f1f1f1] shadow shadow-gray-500/40">
+                    <h5 class="text-[18px] py-[20px]">Coffee</h5>
+                    <p class="text-[18px] text-[#757575] pb-[10px]">Regular
+                        coffee 2.50</p>
+                    <br>
+                    <h5 class="text-[18px] py-[20px]">Chocolato</h5>
+                    <p class="text-[18px] text-[#757575] pb-[10px]">Chocolate
+                        espresso with milk 4.50</p>
+                    <br>
+                    <h5 class="text-[18px] py-[20px]">Corretto</h5>
+                    <p class="text-[18px] text-[#757575] pb-[10px]">Whiskey and
+                        coffee 5.00</p>
+                    <br>
+                    <h5 class="text-[18px] py-[20px]">Iced tea</h5>
+                    <p class="text-[18px] text-[#757575] pb-[10px]">Hot tea,
+                        except not hot 3.00</p>
+                    <br>
+                    <h5 class="text-[18px] py-[20px]">Soda</h5>
+                    <p class="text-[18px] text-[#757575] pb-[10px]">Coke,
+                        Sprite, Fanta, etc. 2.50</p>
+                    <br>
+                </div>
+
+                <img class="mt-[20px]"
+                    src="https://www.w3schools.com/w3images/coffeehouse2.jpg"
+                    alt>
+            </div>
+
+            <div class>
+                <h5
+                    class="my-[50px] text-[18px] bg-[#000] w-[25%] text-[#fff] mx-auto text-center">
+                    WHERE TO FIND US
+                </h5>
+                <p></p>
+                <img src alt>
+                <p></p>
+                <p></p>
+
+                <form>
+                    <input id="name" name="name" type="text"
+                        class="border-2 py-3 px-2 w-full mb-[20px]"
+                        placeholder="Email" />
+
+                    <input id="text" name="text" type="text"
+                        class="border-2 py-3 px-2 w-full mb-[20px]"
+                        placeholder="How many people" />
+
+                    <input id="text" name="text" type="date"
+                        class="border-2 py-3 px-2 w-full mb-[20px]" />
+
+                    <input id="text" name="text" type="text"
+                        class="border-2 py-3 px-2 w-full mb-[20px]"
+                        placeholder="Message \ Special requirements" />
+
+                    <button
+                        class="py-[7px] px-[10px] text-[20px] text-[#fff] bg-[#000]">
+                        SEND MESSAGE
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <script>
+            function openMenu(evt, menuName) {
+                var i, x, tablinks;
+                x = document.getElementsByClassName("menu");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablink");
+                for (i = 0; i < x.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace("active:bg-[#ccc]",
+              "");
+                }
+                document.getElementById(menuName).style.display = "block";
+                evt.currentTarget.firstElementChild.className += "active:bg-[#ccc]";
+            }
+            document.getElementById("myLink").click();
+        </script>
+    </body>
+</html>
